@@ -1,0 +1,373 @@
+.footer-container {
+    width: 100%;
+    background-color: #be2020;
+    color: #ffffff;
+    padding: 70px 60px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-main {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.8fr;
+    gap: 70px;
+
+    padding-bottom: 50px;
+}
+
+/* =========================
+   SCHOOL INFO
+========================= */
+
+.footer-school {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.footer-school-name {
+    margin: 0 0 20px;
+
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Arial Black", sans-serif;
+    letter-spacing: 1px;
+}
+
+.footer-address {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-address:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    margin: 0 0 12px;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #ffeaea;
+}
+
+.footer-email {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-top: 5px;
+}
+
+.footer-email:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   USEFUL LINKS
+========================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3 {
+    margin: 0 0 25px;
+
+    font-size: 21px;
+    font-family: "Arial Black", sans-serif;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    color: #ffeaea;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 13px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.footer-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.footer-action-btn {
+    min-width: 160px;
+
+    padding: 13px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.footer-action-btn:hover {
+    background-color: #ffffff;
+    color: #be2020;
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.footer-social {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
+
+.social-link {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   BOTTOM FOOTER
+========================= */
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 20px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #ffeaea;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+        padding: 60px 30px 0;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .footer-actions {
+        grid-column: 1 / -1;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .footer-container {
+        padding: 50px 20px 0;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding-bottom: 40px;
+    }
+
+    /* School */
+
+    .footer-school {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-school-name {
+        font-size: 21px;
+    }
+
+    .footer-address {
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        font-size: 13px;
+    }
+
+    /* Links */
+
+    .footer-links {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links h3 {
+        font-size: 19px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    /* Buttons */
+
+    .footer-actions {
+        align-items: center;
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .footer-action-btn {
+        width: 180px;
+        box-sizing: border-box;
+    }
+
+    /* Social */
+
+    .footer-social {
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        padding: 22px 0;
+    }
+
+    .social-link {
+        font-size: 13px;
+    }
+
+    /* Bottom */
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 8px;
+
+        padding: 18px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

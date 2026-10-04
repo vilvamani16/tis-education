@@ -1,0 +1,217 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(253, 46, 46, 0.85);
+    backdrop-filter: blur(10px);
+    height: 50px;
+    padding: 0 20px;
+}
+
+.school-logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 35px;
+}
+
+.navbar-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-link {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #222;
+}
+
+.menu-link:hover {
+    background-color: #f2f2f2;
+}
+
+.hamburger-menu-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: rgb(10, 205, 219);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 40px;
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease;
+    position: relative;
+    top: 35px;
+
+}
+
+.hamburger-menu-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar-container {
+        height: 55px;
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .school-logo {
+        width: 80px;
+        height: 80px;
+        top: 25px;
+    }
+
+    .navbar-card {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        min-width: 160px;
+        padding: 8px 0;
+    }
+
+    .menu-link {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .hamburger-menu-card {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        margin: 10px 20px;
+        top: 25px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar-container {
+        height: 50px;
+        padding: 0 10px;
+        gap: 5px;
+    }
+
+    .school-logo {
+        width: 65px;
+        height: 65px;
+        top: 20px;
+    }
+
+    .navbar-card {
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .dropdown-menu {
+        min-width: 140px;
+        top: 100%;
+        border-radius: 6px;
+    }
+
+    .menu-link {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .hamburger-menu-card {
+        width: 55px;
+        height: 55px;
+        padding: 8px;
+        margin: 5px 10px;
+        top: 20px;
+        border-radius: 50%;
+    }
+
+    .hamburger-menu-card:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .navbar-container {
+        height: 45px;
+        padding: 0 8px;
+    }
+
+    .school-logo {
+        width: 55px;
+        height: 55px;
+        top: 17px;
+    }
+
+    .navbar-card {
+        gap: 6px;
+    }
+
+    .nav-link {
+        font-size: 8px;
+    }
+
+    .dropdown-menu {
+        min-width: 125px;
+    }
+
+    .menu-link {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .hamburger-menu-card {
+        width: 45px;
+        height: 45px;
+        padding: 5px;
+        margin: 5px;
+        top: 17px;
+    }
+}

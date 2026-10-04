@@ -1,0 +1,161 @@
+.chatbot-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.greeting-content{
+    background-color: white;
+    width: 220px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.close-btn{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: -25px;
+    left: -13px;
+    cursor: pointer;
+
+}
+
+
+.chatbot-image {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: chatbotFloat 3s ease-in-out infinite;
+}
+
+.chatbot-content:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .chatbot-content {
+        right: 20px;
+        bottom: 30px;
+        gap: 10px;
+    }
+
+    .greeting-content {
+        width: 190px;
+        height: 60px;
+        padding: 8px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .chatbot-image {
+        max-width: 65px;
+    }
+
+    .close-btn {
+        top: -20px;
+        left: -10px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .chatbot-content {
+        position: fixed;
+
+        right: 15px;
+        bottom: 20px;
+
+        gap: 5px;
+
+        z-index: 2000;
+    }
+
+    .greeting-content {
+        width: 160px;
+        height: 55px;
+
+        padding: 8px;
+
+        border-radius: 12px;
+
+        font-size: 12px;
+    }
+
+    .chatbot-image {
+        width: 55px;
+        max-width: 55px;
+    }
+
+    .close-btn {
+        top: -18px;
+        left: -8px;
+    }
+
+    .chatbot-content:hover {
+        transform: none;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .chatbot-content {
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .greeting-content {
+        width: 135px;
+        height: 50px;
+
+        font-size: 11px;
+    }
+
+    .chatbot-image {
+        width: 48px;
+        max-width: 48px;
+    }
+
+    .close-btn {
+        top: -15px;
+        left: -7px;
+    }
+}
+
+@keyframes chatbotFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

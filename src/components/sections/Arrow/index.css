@@ -1,0 +1,59 @@
+.arrow-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    cursor: pointer;
+    z-index: 2000;
+    animation: arrowUpDown 1s ease-in-out infinite;
+}
+
+.arrow-image{
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.arrow-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes arrowUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .arrow-content {
+        animation: arrowUpDownMobile 1.3s ease-in-out infinite;
+    }
+
+    @keyframes arrowUpDownMobile {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(8px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}

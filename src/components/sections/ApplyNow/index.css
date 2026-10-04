@@ -1,0 +1,100 @@
+.apply-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    z-index: 2000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.apply-content:hover{
+    transform: scale(1.1);
+}
+
+.apply-btn{
+    width: 60px;
+    height: 200px;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0px solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .apply-content {
+        right: 0;
+        top: 220px;
+    }
+
+    .apply-btn {
+        width: 55px;
+        height: 170px;
+
+        font-size: 16px;
+
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .apply-content {
+        right: 0;
+        top: 180px;
+
+        gap: 0;
+    }
+
+    .apply-btn {
+        width: 45px;
+        height: 145px;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .apply-content {
+        top: 160px;
+    }
+
+    .apply-btn {
+        width: 40px;
+        height: 125px;
+
+        font-size: 12px;
+
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+}

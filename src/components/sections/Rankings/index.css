@@ -1,0 +1,316 @@
+.ranking-container {
+    width: 100%;
+    min-height: 500px;
+    padding: 80px 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.ranking-content {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-shrink: 0;
+}
+
+.ranking-image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.arrow-bg-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.ranking-info {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+
+.ranking-card {
+    min-width: 0;
+    min-height: 280px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    background-color: #d61515;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.ranking-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.rankingno {
+    margin: 0 0 20px;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1;
+    color: #000000;
+    font-family: "Arial Black", sans-serif;
+}
+
+.state {
+    margin: 0 0 15px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff6f6;
+}
+
+
+.description {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    color: #fff9f9;
+}
+
+/* =========================
+   RANKING RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+    .ranking-container {
+        padding: 70px 35px;
+        gap: 30px;
+    }
+
+    .ranking-content {
+        width: 28%;
+        gap: 18px;
+    }
+
+    .ranking-image {
+        width: 240px;
+    }
+
+    .arrow-bg-img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .ranking-info {
+        gap: 15px;
+    }
+
+    .ranking-card {
+        min-height: 260px;
+        padding: 25px 20px;
+    }
+
+    .rankingno {
+        font-size: 48px;
+    }
+
+    .state {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .ranking-container {
+        width: 100%;
+        padding: 60px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .ranking-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .ranking-image {
+        width: 300px;
+        max-width: 45%;
+        height: auto;
+    }
+
+    .arrow-bg-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .ranking-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ranking-card {
+        min-height: 270px;
+        padding: 30px 25px;
+    }
+
+    .rankingno {
+        font-size: 50px;
+    }
+
+    .state {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .ranking-container {
+        width: 100%;
+        padding: 50px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ranking-content {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ranking-image {
+        width: 85%;
+        max-width: 320px;
+    }
+
+    .arrow-bg-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ranking-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ranking-card {
+        width: 100%;
+        min-height: 240px;
+        padding: 25px 22px;
+        border-radius: 18px;
+    }
+
+    .ranking-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .rankingno {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .state {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .ranking-container {
+        padding: 40px 12px;
+        gap: 25px;
+    }
+
+    .ranking-content {
+        gap: 15px;
+    }
+
+    .ranking-image {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .arrow-bg-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ranking-info {
+        gap: 15px;
+    }
+
+    .ranking-card {
+        min-height: 220px;
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .rankingno {
+        font-size: 38px;
+    }
+
+    .state {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}

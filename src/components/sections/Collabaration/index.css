@@ -1,0 +1,121 @@
+.collab-container {
+    width: 100%;
+    padding: 80px 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.collab-header {
+    margin: 0 0 50px;
+    text-align: center;
+    font-size: 55px;
+    font-family: "Arial Black", sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #111111;
+}
+
+.collab-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+}
+
+/* Each company card */
+.collab-card {
+    flex: 0 0 220px;
+    width: 220px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f7f7f7;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    animation: companyScroll 15s linear infinite;
+}
+
+/* Company image */
+.collab-image {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+/* Image hover */
+.collab-card:hover .collab-image {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+
+    .collab-container {
+        padding: 60px 30px;
+    }
+
+    .collab-header {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+
+    .collab-card {
+        flex: 0 0 190px;
+        width: 190px;
+        height: 130px;
+    }
+
+    .collab-image {
+        width: 130px;
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .collab-container {
+        padding: 50px 15px;
+    }
+
+    .collab-header {
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    .collab-content {
+        gap: 15px;
+    }
+
+    .collab-card {
+        flex: 0 0 160px;
+        width: 160px;
+        height: 110px;
+        border-radius: 15px;
+    }
+
+    .collab-image {
+        width: 110px;
+        height: 70px;
+    }
+}
+
+/* Automatic movement */
+@keyframes companyScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-250px);
+    }
+}
